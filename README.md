@@ -1,4 +1,4 @@
-# [Jo's Pathway Research Lab LTD](https://jo-pathway-research.github.io)
+[Jo's Pathway Research Lab LTD](https://jo-pathway-research.github.io)
 
 **Independent research laboratory based in Ukraine**
 
