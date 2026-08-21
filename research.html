@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk" data-lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дослідження — Jo's Pathway Research Lab LTD</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  [data-lang] [data-en]{ display:none; }
+  html[data-lang="en"] [data-en]{ display:inline; }
+  html[data-lang="en"] [data-uk]{ display:none; }
+  html[data-lang="uk"] [data-uk]{ display:inline; }
+  [data-en-b], [data-uk-b]{ display:none; }
+  html[data-lang="en"] [data-en-b]{ display:block; }
+  html[data-lang="uk"] [data-uk-b]{ display:block; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="name">Jo's Pathway Research Lab</span>
+      <span class="tag">LTD — Ukraine · Molecular &amp; Cellular Physiology</span>
+    </a>
+    <nav class="primary">
+      <a href="index.html"><span data-uk>Лабораторія</span><span data-en>Laboratory</span></a>
+      <a href="research.html" class="active"><span data-uk>Дослідження</span><span data-en>Research</span></a>
+      <a href="index.html#contact"><span data-uk>Контакти</span><span data-en>Contact</span></a>
+      <div class="lang-toggle">
+        <button data-set="uk" class="lang active">UK</button>
+        <button data-set="en" class="lang">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="research-hero">
+  <div class="wrap">
+    <p class="eyebrow" data-uk-b>Публікації лабораторії</p>
+    <p class="eyebrow" data-en-b>Laboratory publications</p>
+    <h1 data-uk-b>Дослідження</h1>
+    <h1 data-en-b>Research</h1>
+    <p data-uk-b>Хронологічний перелік досліджень, оглядів і аналітичних матеріалів Jo's Pathway Research Lab LTD.</p>
+    <p data-en-b>A chronological record of studies, reviews, and analytical materials from Jo's Pathway Research Lab LTD.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+
+    <!-- ============================================================
+         СПИСОК ДОСЛІДЖЕНЬ / STUDIES LIST
+         Щоб додати нове дослідження — скопіюйте один блок <article
+         class="study">...</article> нижче (або приклад у коментарі),
+         вставте його ПЕРШИМ всередині <div id="studies-list">,
+         і заповніть свої дані. Якщо в списку лишається лише порожній
+         стан (.empty-state) — просто видаліть цей блок, коли додасте
+         перше дослідження.
+
+         To add a new study, copy one <article class="study"> block
+         (or the commented template below), paste it as the FIRST
+         child inside <div id="studies-list">, and fill in your data.
+         If only the .empty-state block remains below, delete it once
+         you add your first real study.
+
+    <article class="study">
+      <div class="meta">
+        <span class="date">2026-01-01</span>
+        <span data-uk>Огляд</span><span data-en>Review</span>
+        <span class="status">draft</span>
+      </div>
+      <div>
+        <div class="tags">
+          <span>mTORC1</span>
+          <span>Akt/PKB</span>
+        </div>
+        <h3 data-uk-b>Заголовок дослідження українською</h3>
+        <h3 data-en-b>Study title in English</h3>
+        <p class="summary" data-uk-b>Короткий опис — одне-два речення про мету, метод і головний висновок дослідження.</p>
+        <p class="summary" data-en-b>Short summary — one or two sentences on the aim, method, and key finding.</p>
+      </div>
+    </article>
+
+    ============================================================ -->
+
+    <div id="studies-list">
+
+      <div class="empty-state">
+        <p class="glyph" data-uk-b>Архів порожній</p>
+        <p class="glyph" data-en-b>Archive is empty</p>
+        <h3 data-uk-b>Перше дослідження ще готується</h3>
+        <h3 data-en-b>The first study is in preparation</h3>
+        <p data-uk-b>Матеріали з'являться тут по мірі завершення аналізу та рецензування. Використайте HTML-шаблон у коментарях коду цієї сторінки, щоб додати запис.</p>
+        <p data-en-b>Materials will appear here as analysis and review are completed. Use the HTML template in this page's source comments to add an entry.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand-col">
+        <p class="name">Jo's Pathway Research Lab LTD</p>
+        <p data-uk-b>Незалежна дослідницька лабораторія молекулярної біології, ендокринології та спортивної фізіології.</p>
+        <p data-en-b>An independent research laboratory in molecular biology, endocrinology, and exercise physiology.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-uk-b>Контакти</h5>
+        <h5 data-en-b>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@jopathwaylab.example">info@jopathwaylab.example</a></li>
+          <li><a href="tel:+380000000000">+380 (00) 000-00-00</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-uk-b>Розташування</h5>
+        <h5 data-en-b>Location</h5>
+        <ul>
+          <li><span data-uk-b>Україна</span><span data-en-b>Ukraine</span></li>
+          <li><span data-uk>Адресу уточнюйте електронною поштою</span><span data-en>Address available on request</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jo's Pathway Research Lab LTD</span>
+      <span data-uk>Незалежна дослідницька лабораторія · Україна</span>
+      <span data-en>Independent research laboratory · Ukraine</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

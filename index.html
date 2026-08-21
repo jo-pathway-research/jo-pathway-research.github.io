@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="uk" data-lang="uk">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X38T82NVND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X38T82NVND');
+</script>
+<script type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {"siteId":4652223,"cookiePolicyId":51506417,"lang":"en","storage":{"useSiteId":true}};
+</script>
+<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4652223.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jo's Pathway Research Lab LTD</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  [data-lang] [data-en]{ display:none; }
+  html[data-lang="en"] [data-en]{ display:inline; }
+  html[data-lang="en"] [data-uk]{ display:none; }
+  html[data-lang="uk"] [data-uk]{ display:inline; }
+  [data-en-b], [data-uk-b]{ display:none; }
+  html[data-lang="en"] [data-en-b]{ display:block; }
+  html[data-lang="uk"] [data-uk-b]{ display:block; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="name">Jo's Pathway Research Lab</span>
+      <span class="tag">LTD — Ukraine · Molecular &amp; Cellular Physiology</span>
+    </a>
+    <nav class="primary">
+      <a href="index.html" class="active"><span data-uk>Лабораторія</span><span data-en>Laboratory</span></a>
+      <a href="research.html"><span data-uk>Дослідження</span><span data-en>Research</span></a>
+      <a href="#contact"><span data-uk>Контакти</span><span data-en>Contact</span></a>
+      <div class="lang-toggle">
+        <button data-set="uk" class="lang active">UK</button>
+        <button data-set="en" class="lang">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-diagram">
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <style>
+          .edge{ stroke:#3A4453; stroke-width:1.5; fill:none; transition: stroke .2s ease, stroke-width .2s ease; }
+          .edge.lit{ stroke:#55C4B5; stroke-width:2.4; filter: drop-shadow(0 0 4px rgba(85,196,181,0.5)); }
+          .node{ cursor:pointer; outline:none; }
+          .node circle.node-dot{ fill:#12161F; stroke:#3A4453; stroke-width:1.5; transition: all .2s ease; }
+          .node text{ font-family:'IBM Plex Mono',monospace; font-size:11px; fill:#AEB6BE; transition: fill .2s ease; }
+          
+          /* Hover & active states */
+          .node:hover circle.node-dot,
+          .node.hovered circle.node-dot,
+          .node:focus-visible circle.node-dot{ stroke:#55C4B5; fill:#1B2E2B; r:8.5; }
+          .node:hover text,
+          .node.hovered text,
+          .node:focus-visible text{ fill:#FFFFFF; }
+
+          /* Connected nodes */
+          .node.connected circle.node-dot{ stroke:#55C4B5; fill:#142220; }
+          .node.connected text{ fill:#D3F3EF; }
+
+          /* Hub node */
+          .node.hub circle.node-dot{ fill:#1B221A; stroke:#D9A441; }
+          .node.hub text{ fill:#D9A441; }
+          .node.hub:hover circle.node-dot,
+          .node.hub.hovered circle.node-dot{ stroke:#FAD02C; fill:#2E2412; r:10.5; }
+        </style>
+      </defs>
+
+      <!-- Edges -->
+      <path class="edge" data-from="igf1" data-to="akt" d="M80,65 L215,52"/>
+      <path class="edge" data-from="akt" data-to="mtor" d="M252,55 L372,120"/>
+      <path class="edge" data-from="ar" data-to="mtor" d="M112,182 L368,138"/>
+      <path class="edge" data-from="tgf" data-to="mtor" d="M262,372 L372,150"/>
+      <path class="edge" data-from="wnt" data-to="mtor" d="M400,388 L400,152"/>
+      <path class="edge" data-from="fgfr" data-to="akt" d="M100,412 L222,66"/>
+      <path class="edge" data-from="akt" data-to="foxo" d="M240,66 L350,254"/>
+      <path class="edge" data-from="mstn" data-to="tgf" d="M78,304 L218,376"/>
+
+      <!-- Nodes with invisible hit area for easy hover -->
+      <g class="node" data-id="igf1" transform="translate(65,65)" tabindex="0" role="button" aria-label="IGF-1 / PI3K">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">IGF-1 / PI3K</text>
+      </g>
+      <g class="node" data-id="akt" transform="translate(230,50)" tabindex="0" role="button" aria-label="Akt / PKB">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">Akt / PKB</text>
+      </g>
+      <g class="node hub" data-id="mtor" transform="translate(390,135)" tabindex="0" role="button" aria-label="mTORC1/2">
+        <circle r="24" fill="transparent" />
+        <circle class="node-dot" r="9"/>
+        <text x="16" y="4">mTORC1/2</text>
+      </g>
+      <g class="node" data-id="ar" transform="translate(70,180)" tabindex="0" role="button" aria-label="Androgen receptor">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">Androgen receptor</text>
+      </g>
+      <g class="node" data-id="foxo" transform="translate(355,265)" tabindex="0" role="button" aria-label="FOXO">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">FOXO</text>
+      </g>
+      <g class="node" data-id="mstn" transform="translate(65,300)" tabindex="0" role="button" aria-label="Myostatin–Smad">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">Myostatin–Smad</text>
+      </g>
+      <g class="node" data-id="tgf" transform="translate(230,380)" tabindex="0" role="button" aria-label="TGF-β / BMP">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">TGF-β / BMP</text>
+      </g>
+      <g class="node" data-id="wnt" transform="translate(400,400)" tabindex="0" role="button" aria-label="Wnt / β-catenin">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">Wnt / β-catenin</text>
+      </g>
+      <g class="node" data-id="fgfr" transform="translate(95,425)" tabindex="0" role="button" aria-label="FGFR">
+        <circle r="20" fill="transparent" />
+        <circle class="node-dot" r="7"/>
+        <text x="14" y="4">FGFR</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" data-uk-b>Незалежна дослідницька лабораторія · Україна</p>
+      <p class="eyebrow" data-en-b>Independent Research Laboratory · Ukraine</p>
+
+      <h1 data-uk-b>Картографуємо шляхи, якими <em>м'язова тканина</em> росте й адаптується</h1>
+      <h1 data-en-b>Mapping the pathways by which <em>skeletal muscle</em> grows and adapts</h1>
+
+      <p class="lede" data-uk-b>Jo's Pathway Research Lab LTD вивчає молекулярні та клітинні механізми росту скелетної м'язової тканини — від рецептора до транскрипції гена.</p>
+      <p class="lede" data-en-b>Jo's Pathway Research Lab LTD studies the molecular and cellular mechanisms of skeletal muscle growth — from receptor to gene transcription.</p>
+
+      <div class="hero-actions">
+        <a href="research.html" class="btn solid"><span data-uk>Переглянути дослідження</span><span data-en>View research</span></a>
+        <a href="#focus" class="btn"><span data-uk>Напрями роботи</span><span data-en>Focus areas</span></a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <p class="panel-label" data-uk-b>Ключові сигнальні шляхи в роботі</p>
+      <p class="panel-label" data-en-b>Signaling pathways under study</p>
+      <ul class="pathway-list">
+        <li><span data-uk>Ріст і синтез білка</span><span data-en>Growth &amp; protein synthesis</span> <span class="code">mTORC1/2 · Akt/PKB</span></li>
+        <li><span data-uk>Гормональна регуляція</span><span data-en>Hormonal regulation</span> <span class="code">AR · IGF-1/PI3K</span></li>
+        <li><span data-uk>Гальмування росту</span><span data-en>Growth inhibition</span> <span class="code">Myostatin–Smad · TGF-β</span></li>
+        <li><span data-uk>Морфогенез тканини</span><span data-en>Tissue morphogenesis</span> <span class="code">BMP · Wnt/β-catenin</span></li>
+        <li><span data-uk>Метаболічний контроль</span><span data-en>Metabolic control</span> <span class="code">FOXO · FGFR</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <p class="lead" data-uk-b>«Ми досліджуємо не ефект самого агента, а мову, якою клітина говорить сама з собою під час росту.»</p>
+      <p class="lead" data-en-b>“We study not the effect of an agent itself, but the language a cell uses to speak with itself during growth.”</p>
+    </div>
+    <div>
+      <p data-uk-b>Jo's Pathway Research Lab LTD — незалежна дослідницька лабораторія, заснована в Україні. Лабораторія спеціалізується на вивченні молекулярних і клітинних механізмів росту та адаптації скелетної м'язової тканини.</p>
+      <p data-en-b>Jo's Pathway Research Lab LTD is an independent research laboratory based in Ukraine. The laboratory specializes in the study of molecular and cellular mechanisms underlying skeletal muscle growth and adaptation.</p>
+
+      <p data-uk-b>Основний фокус досліджень — ключові сигнальні pathways, зокрема mTORC1/2, Akt/PKB, androgen receptor signaling, IGF-1/PI3K, myostatin–Smad pathway, TGF-β, BMP-сигналювання, Wnt/β-catenin, FOXO та FGFR, а також вплив на них різних фармакологічних агентів і біологічно активних сполук.</p>
+      <p data-en-b>Our primary research focus is on key signaling pathways, including mTORC1/2, Akt/PKB, androgen receptor signaling, IGF-1/PI3K, the myostatin–Smad pathway, TGF-β, BMP signaling, Wnt/β-catenin, FOXO, and FGFR, as well as the effects of various pharmacological agents and biologically active compounds on these pathways.</p>
+
+      <p data-uk-b>Jo's Pathway Research Lab LTD працює на стику молекулярної біології, ендокринології та спортивної фізіології. Мета лабораторії — збір, критичний аналіз і систематизація наукових даних для формування точного розуміння механізмів росту та адаптації організму.</p>
+      <p data-en-b>Jo's Pathway Research Lab LTD operates at the intersection of molecular biology, endocrinology, and exercise physiology. The laboratory's objective is to collect, critically analyze, and systematize scientific data in order to build an accurate understanding of the mechanisms of human growth and adaptation.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="pathways">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-uk-b>Об'єкти дослідження</p>
+      <p class="eyebrow" data-en-b>Subjects of study</p>
+      <h2 data-uk-b>Сигнальні шляхи в фокусі лабораторії</h2>
+      <h2 data-en-b>Signaling pathways in focus</h2>
+      <p data-uk-b>Кожен шлях розглядається як окрема система регуляції — з власними вузлами, зворотними зв'язками та точками фармакологічного впливу.</p>
+      <p data-en-b>Each pathway is treated as a distinct regulatory system — with its own nodes, feedback loops, and points of pharmacological intervention.</p>
+    </div>
+
+    <div class="pathways-grid">
+      <div class="pathway-card">
+        <span class="code">mTORC1 / mTORC2</span>
+        <h3 data-uk-b>Синтез білка</h3>
+        <h3 data-en-b>Protein synthesis</h3>
+        <p data-uk-b>Центральний вузол, що інтегрує сигнали живлення, енергії та факторів росту в трансляційну активність.</p>
+        <p data-en-b>The central node integrating nutrient, energy, and growth-factor signals into translational activity.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">Akt / PKB</span>
+        <h3 data-uk-b>Проліферація і виживання</h3>
+        <h3 data-en-b>Proliferation &amp; survival</h3>
+        <p data-uk-b>Кіназа, що передає сигнал від IGF-1/PI3K до mTOR та пригнічує проатрофічні фактори транскрипції.</p>
+        <p data-en-b>A kinase relaying signal from IGF-1/PI3K to mTOR while suppressing pro-atrophic transcription factors.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">Androgen Receptor</span>
+        <h3 data-uk-b>Гормональна сигналізація</h3>
+        <h3 data-en-b>Hormonal signaling</h3>
+        <p data-uk-b>Ядерний рецептор, що модулює транскрипцію генів, пов'язаних із міофібрилярною гіпертрофією.</p>
+        <p data-en-b>A nuclear receptor modulating transcription of genes tied to myofibrillar hypertrophy.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">IGF-1 / PI3K</span>
+        <h3 data-uk-b>Ініціація росту</h3>
+        <h3 data-en-b>Growth initiation</h3>
+        <p data-uk-b>Верхній сигнальний каскад, що запускає низку подій, що ведуть до активації сателітних клітин.</p>
+        <p data-en-b>An upstream cascade triggering the chain of events leading to satellite cell activation.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">Myostatin – Smad</span>
+        <h3 data-uk-b>Негативна регуляція</h3>
+        <h3 data-en-b>Negative regulation</h3>
+        <p data-uk-b>Природний обмежувач росту м'язової маси через фосфорилювання Smad2/3.</p>
+        <p data-en-b>A natural limiter of muscle mass growth acting through Smad2/3 phosphorylation.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">TGF-β / BMP</span>
+        <h3 data-uk-b>Тканинний морфогенез</h3>
+        <h3 data-en-b>Tissue morphogenesis</h3>
+        <p data-uk-b>Родина факторів, що балансують ріст, диференціацію та фіброзну відповідь тканини.</p>
+        <p data-en-b>A factor family balancing tissue growth, differentiation, and fibrotic response.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">Wnt / β-catenin</span>
+        <h3 data-uk-b>Доля сателітних клітин</h3>
+        <h3 data-en-b>Satellite cell fate</h3>
+        <p data-uk-b>Визначає диференціацію та проліферацію клітин-попередників м'язової тканини.</p>
+        <p data-en-b>Determines differentiation and proliferation of muscle progenitor cells.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">FOXO</span>
+        <h3 data-uk-b>Атрофія і метаболізм</h3>
+        <h3 data-en-b>Atrophy &amp; metabolism</h3>
+        <p data-uk-b>Транскрипційні фактори, пригнічені Akt, що керують протеолізом і метаболічним гомеостазом.</p>
+        <p data-en-b>Transcription factors suppressed by Akt, governing proteolysis and metabolic homeostasis.</p>
+      </div>
+      <div class="pathway-card">
+        <span class="code">FGFR</span>
+        <h3 data-uk-b>Проліферація попередників</h3>
+        <h3 data-en-b>Progenitor proliferation</h3>
+        <p data-uk-b>Рецептор фактора росту фібробластів, залучений у регенерацію та ремоделювання тканини.</p>
+        <p data-en-b>Fibroblast growth factor receptor involved in tissue regeneration and remodeling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="focus">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-uk-b>Методологія</p>
+      <p class="eyebrow" data-en-b>Methodology</p>
+      <h2 data-uk-b>Що саме ми аналізуємо</h2>
+      <h2 data-en-b>What we analyze</h2>
+    </div>
+
+    <div class="focus-list">
+      <div class="focus-item">
+        <span class="mark">01</span>
+        <div>
+          <h4 data-uk-b>Транскрипція генів та білковий синтез</h4>
+          <h4 data-en-b>Gene transcription &amp; protein synthesis</h4>
+          <p data-uk-b>Аналіз того, як фармакологічні агенти модулюють експресію генів і трансляційну активність.</p>
+          <p data-en-b>Analysis of how pharmacological agents modulate gene expression and translational activity.</p>
+        </div>
+      </div>
+      <div class="focus-item">
+        <span class="mark">02</span>
+        <div>
+          <h4 data-uk-b>Активація сателітних клітин</h4>
+          <h4 data-en-b>Satellite cell activation</h4>
+          <p data-uk-b>Дослідження шляхів, що визначають проліферацію та злиття клітин-попередників.</p>
+          <p data-en-b>Study of pathways governing proliferation and fusion of progenitor cells.</p>
+        </div>
+      </div>
+      <div class="focus-item">
+        <span class="mark">03</span>
+        <div>
+          <h4 data-uk-b>Міофібрилярна гіпертрофія та склад тіла</h4>
+          <h4 data-en-b>Myofibrillar hypertrophy &amp; body composition</h4>
+          <p data-uk-b>Оцінка структурних і композиційних змін тканини під впливом досліджуваних сполук.</p>
+          <p data-en-b>Evaluation of structural and compositional tissue changes under studied compounds.</p>
+        </div>
+      </div>
+      <div class="focus-item">
+        <span class="mark">04</span>
+        <div>
+          <h4 data-uk-b>Індивідуальна варіабельність і фармакокінетика</h4>
+          <h4 data-en-b>Inter-individual variability &amp; pharmacokinetics</h4>
+          <p data-uk-b>Врахування генетичних факторів, що визначають різницю у відповіді на терапію.</p>
+          <p data-en-b>Accounting for genetic factors underlying differences in treatment response.</p>
+        </div>
+      </div>
+      <div class="focus-item">
+        <span class="mark">05</span>
+        <div>
+          <h4 data-uk-b>Ендокринні та серцево-судинні маркери</h4>
+          <h4 data-en-b>Endocrine &amp; cardiovascular markers</h4>
+          <p data-uk-b>Довгострокове спостереження за впливом на гормональний баланс і серцево-судинну систему.</p>
+          <p data-en-b>Long-term monitoring of effects on hormonal balance and the cardiovascular system.</p>
+        </div>
+      </div>
+      <div class="focus-item">
+        <span class="mark">06</span>
+        <div>
+          <h4 data-uk-b>Метаболічне здоров'я</h4>
+          <h4 data-en-b>Metabolic health</h4>
+          <p data-uk-b>Систематизація даних про вплив на метаболічні показники в довгостроковій перспективі.</p>
+          <p data-en-b>Systematizing data on long-term metabolic impact.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand-col">
+        <p class="name">Jo's Pathway Research Lab LTD</p>
+        <p data-uk-b>Незалежна дослідницька лабораторія молекулярної біології, ендокринології та спортивної фізіології.</p>
+        <p data-en-b>An independent research laboratory in molecular biology, endocrinology, and exercise physiology.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-uk-b>Контакти</h5>
+        <h5 data-en-b>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@jopathwaylab.example">info@jopathwaylab.example</a></li>
+          <li><a href="tel:+380000000000">+380 (00) 000-00-00</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-uk-b>Розташування</h5>
+        <h5 data-en-b>Location</h5>
+        <ul>
+          <li><span data-uk-b>Україна</span><span data-en-b>Ukraine</span></li>
+          <li><span data-uk>Адресу уточнюйте електронною поштою</span><span data-en>Address available on request</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Jo's Pathway Research Lab LTD</span>
+      <span data-uk>Незалежна дослідницька лабораторія · Україна</span>
+      <span data-en>Independent research laboratory · Ukraine</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
