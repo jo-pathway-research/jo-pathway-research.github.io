@@ -35,7 +35,7 @@
 </script>
 <!-- Clickio Consent Main tag -->
 <script async type="text/javascript" src="//clickiocmp.com/t/consent_250144.js"></script>
-<script defer data-cfasync='false' src='https://s.clickiocdn.com/t/250144_wv.js'></script>
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jo's Pathway Research Lab LTD</title>
@@ -51,7 +51,62 @@
 </style>
 </head>
 <body>
-
+<amp-analytics>
+    <script type="application/json">
+    {
+        "vars": {
+            "accountId": "250144"
+        },
+        "extraUrlParams": {
+            "url": "${canonicalUrl}",
+            "dr": "${documentReferrer}",
+            "r": "${externalReferrer}",
+            "pp": "$IF(${previousPage},${previousPage},${documentReferrer})"
+        },
+        "requests": {
+            "event": "https://clickiocdn.com/utr/wv/?ampwv=1&prism=0&is360=0&rnd=RANDOM&eid=${accountId}",
+            "CWV_EVENT": "${event}&type=CWV"
+        },
+        "triggers": {
+            "cls": {
+                "on": "visible",
+                "request": "CWV_EVENT",
+                "extraUrlParams": {
+                    "cls": "${cumulativeLayoutShift}"
+                }
+            },
+            "lcp": {
+                "on": "visible",
+                "request": "CWV_EVENT",
+                "extraUrlParams": {
+                    "lcp": "${largestContentfulPaint}"
+                }
+            },
+            "fcp": {
+                "on": "visible",
+                "request": "CWV_EVENT",
+                "extraUrlParams": {
+                    "fcp": "${firstContentfulPaint}"
+                }
+            },
+            "fid": {
+                "on": "visible",
+                "request": "CWV_EVENT",
+                "extraUrlParams": {
+                    "fid": "${firstInputDelay}"
+                }
+            },
+            "inp": {
+                "on": "visible",
+                "request": "CWV_EVENT",
+                "extraUrlParams": {
+                    "inp": "${interactionToNextPaint}"
+                }
+            }
+        }
+    }
+    </script>
+</amp-analytics>
 <header class="site-header">
   <div class="wrap">
     <a href="index.html" class="brand">
